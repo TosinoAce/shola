@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+header img {
+  width: 80px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+header ul li {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+h1 {
+  font-family: "Diamond", sans-serif;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+#two {
+  width: 40%;
+  background-color: goldenrod;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#one {
+  width: 60%;
+  background-color: #ebebeb;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 50px;
+  flex-direction: column;
+}
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: goldenrod;
+  color: #ffffff;
+}
+.hero > div > img {
+  width: 500px;
+}
+.about {
+  width: 100%;
+  min-height: 70vh;
+  background-color: goldenrod;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  overflow-y: scroll;
+}
+.about div {
+  min-width: 320px;
+  max-width: 320px;
+  height: 500px;
+  padding: 30px;
+  text-align: center;
+  background: rgba(216, 215, 215, 0.5);
+}
+.services {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  padding: 50px;
+}
+.services img {
+  width: 400px;
+}
+.services h2 {
+  font-size: 50px;
+  font-family: "Diamond", sans-serif;
+  margin-bottom: 30px;
+}
+.services ul li {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #e9dcca;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+.contact img {
+  width: 400px;
+}
+.contact h2 {
+  font-family: "Diamond", sans-serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+#head {
+  font-size: 55px;
+  margin-bottom: 40px;
+}
+.contact ul li {
+  list-style: none;
+  font-size: 20px;
+  color: black;
+  margin-left: 20px;
+}
+.contact p {
+  margin-left: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.review {
+  width: 100%;
+  padding: 80px 70px;
+  background-color: goldenrod;
+}
+.review h2 {
+  font-family: "Diamond", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.review > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.review > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-width: 300px;
+  max-width: 300px;
+}
+.review p {
+  text-align: center;
+  font-family: "poppins", serif;
+  font-size: 13px;
+  color: #ffffff;
+}
+.review span {
+  text-align: center;
+  font-weight: 700;
+  font-family: "poppins", serif;
+  font-style: italic;
+  color: #ffffff;
+}
+
+footer {
+  padding: 50px;
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+  align-items: flex-start;
+}
+footer img {
+  width: 120px;
+}
+footer ul {
+  list-style: none;
+}
+footer li {
+  font-family: "poppins", serif;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #000;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+footer li:hover {
+  text-decoration: underline;
+}
+footer p {
+  font-weight: 600;
+  font-size: 18px;
+  user-select: none;
+  line-height: 140%;
+  color: #000;
+  font-family: "Diamond", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  footer {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #one,
+  #two {
+    width: 100%;
+    padding: 20px;
+  }
+  #two {
+    height: 90vh;
+  }
+  header {
+    padding: 20px;
+    flex-direction: column;
+  }
+  header ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header img {
+    display: none;
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero > div > img {
+    width: 340px;
+  }
+  .services {
+    flex-direction: column;
+    padding: 30px 15px;
+  }
+  .services img {
+    width: 350px;
+  }
+  .contact {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .review {
+    padding: 30px 10px;
+  }
+  .services ul li{
+    font-size: 16px;
+  }
+  .services ul {
+    list-style: none;
+  }
+}
