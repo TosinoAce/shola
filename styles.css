@@ -231,6 +231,7 @@ footer p {
   }
   #two {
     height: 90vh;
+    align-items: end;
   }
   header {
     padding: 20px;
